@@ -3,6 +3,9 @@
     min-height: 100vh;
     background-image: url(../img/fondo.jpg);
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .loader {
