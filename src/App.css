@@ -1,0 +1,102 @@
+.App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(./img/fondo.jpg);
+    background-size: cover;
+}
+
+.Box{
+    background-color: rgba(57, 131, 241, 0.918);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 2rem rgb(2, 255, 213);
+}
+
+.Box-img,.details{
+    grid-row: 5/6;
+}
+
+
+.Box h1,h2{
+    grid-column: span 2;
+    color: rgb(0, 0, 68);
+}
+
+.Box:hover{
+    transform: scale(1.01);
+    box-shadow: 0 0 2rem rgb(0, 81, 255);
+}
+
+.title{
+    justify-self: center;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+    background-color: rgba(0, 174, 255, 0.39);
+    border-radius: 1rem;
+    width: 60%;
+}
+
+.subtitle,.details-description, .date, .hour{
+    margin-bottom: 0.5rem;
+    font-size: 1.2em;
+}
+
+.date{
+    color: rgb(56, 56, 56);
+}
+
+.hour{
+    width: 40%;
+    justify-self: center;
+    font-size: 1.6em;
+    margin-top: 1em;
+    border-radius: 1rem;
+    background-color: rgba(14, 72, 231, 0.301);
+}
+
+
+.details ol{
+    text-align: left;
+}
+
+
+.details span{
+    color: rgb(65, 6, 121);
+}
+
+.btn-change{
+    margin-top: 0.5rem;
+    width: 30%;
+    grid-column: span 2;
+    justify-self: center;
+    border-color: rgb(6, 162, 252);
+    background-color: aquamarine;
+    border-radius: 1rem;
+    font-weight: bold;
+    color: blue;
+}
+
+.temperature{
+    justify-self: center;
+    width: 30%;
+    font-size: 1.5em;
+    color: rgb(0, 12, 180);
+    border-radius: 1rem;
+    background-color: rgba(0, 255, 255, 0.226);
+}
+
+.btn-change:hover{
+    transform: scale(1.01);
+    box-shadow: 0 0 1rem rgb(0, 225, 255);
+}
+
+
+
